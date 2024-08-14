@@ -32,7 +32,7 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Roboto, Arial, sans-serif',
     fontWeightMedium: 500,
-    fontWeightRegular: 600, // semiBold
+    fontWeightRegular: 600,
     fontWeightBold: 700,
   },
   breakpoints: {

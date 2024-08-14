@@ -41,3 +41,15 @@ export interface Theme {
     };
   };
 }
+
+export interface FormValues {
+  amount: number;
+  fromCurrency: string;
+  toCurrency: string;
+}
+
+export interface Token {
+  symbol: string;
+  name: string;
+  imgSrc: string;
+}

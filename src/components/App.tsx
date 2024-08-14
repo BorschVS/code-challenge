@@ -1,8 +1,12 @@
-import Problem1 from './Problem1';
+import { FC } from 'react';
 
-const App = () => (
+import SumToN from './SumToN';
+import FancyForm from './FancyForm';
+
+const App: FC = () => (
   <div>
-    <Problem1 />
+    <SumToN />
+    <FancyForm />
   </div>
 );
 

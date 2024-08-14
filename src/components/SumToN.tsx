@@ -1,9 +1,9 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, FC, useState } from 'react';
 import { TextField, Box, Typography, Container } from '@mui/material';
+
 import { sumToNIterative, sumToNMath, sumToNRecursive } from 'utils/sumToN';
 
-const Problem1 = () => {
-  // State variables for each input value and result
+const SumToN: FC = () => {
   const [iterativeInput, setIterativeInput] = useState<number>(5);
   const [mathInput, setMathInput] = useState<number>(5);
   const [recursiveInput, setRecursiveInput] = useState<number>(5);
@@ -16,7 +16,6 @@ const Problem1 = () => {
     sumToNRecursive(5)
   );
 
-  // Handler to update results based on input value and type
   const handleChange = (
     event: ChangeEvent<HTMLInputElement>,
     type: 'iterative' | 'math' | 'recursive'
@@ -40,9 +39,11 @@ const Problem1 = () => {
   };
 
   return (
-    <Container>
+    <Container sx={{ marginBottom: '40px' }}>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: 4 }}>
-        <Typography variant="h6">Sum Calculations</Typography>
+        <Typography variant="h4" gutterBottom>
+          Sum Calculations
+        </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           <TextField
             label="Iterative Sum"
@@ -89,4 +90,4 @@ const Problem1 = () => {
   );
 };
 
-export default Problem1;
+export default SumToN;
