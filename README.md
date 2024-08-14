@@ -3,12 +3,12 @@
 This document provides a comprehensive analysis of the refactoring process for the `WalletPage` component, a crucial part of a React TypeScript application. The refactoring aimed to enhance the code’s maintainability, readability, and performance by addressing various shortcomings and inefficiencies in the original implementation.
 
 ## Table of Contents
-[Original Code Review](#original-code-review)
-[Type Definitions](#type-definitions)
-[Priority Calculation](#priority-calculation)
-[Balances Filtering and Sorting](#balances-filtering-and-sorting)
-[Data Formatting and Rendering](#data-formatting-and-rendering)
-[Conclusion](#conclusion)
+* [Original Code Review](#original-code-review)
+* [Type Definitions](#type-definitions)
+* [Priority Calculation](#priority-calculation)
+* [Balances Filtering and Sorting](#balances-filtering-and-sorting)
+* [Data Formatting and Rendering](#data-formatting-and-rendering)
+* [Conclusion](#conclusion)
 
 ## Original Code Review
 ### Type Definitions
