@@ -1,3 +1,4 @@
+// base
 export interface Theme {
   palette: {
     background: {
@@ -42,6 +43,7 @@ export interface Theme {
   };
 }
 
+// FancyForm
 export interface FormValues {
   amount: number;
   fromCurrency: string;
@@ -52,4 +54,25 @@ export interface Token {
   symbol: string;
   name: string;
   imgSrc: string;
+}
+
+// MessyReact
+
+export interface WalletBalance {
+  currency: string;
+  amount: number;
+  blockchain: string;
+}
+
+export interface FormattedWalletBalance extends WalletBalance {
+  formatted: string;
+}
+
+export interface Prices {
+  [key: string]: number;
+}
+
+export interface Props {
+  balances: FormattedWalletBalance[];
+  prices: Prices;
 }
