@@ -1,15 +1,10 @@
 import { useMemo } from 'react';
 
-import { WalletRow } from './path/to/WalletRow';
-import styles from './path/to/styles';
+import WalletRow from './WalletRow';
 
 import { Props } from 'types/interfaces';
 
-export const WalletPage: React.FC<Props> = ({
-  balances,
-  prices,
-  ...rest
-}: Props) => {
+const WalletPage: React.FC<Props> = ({ balances, prices, ...rest }: Props) => {
   const getBlockchainPriority = (blockchain: string): number => {
     switch (blockchain) {
       case 'Osmosis':
@@ -45,8 +40,8 @@ export const WalletPage: React.FC<Props> = ({
     const usdValue: number = prices[balance.currency] * balance.amount;
     return (
       <WalletRow
-        className={styles.row}
         key={balance.currency}
+        currency={balance.currency}
         amount={balance.amount}
         usdValue={usdValue}
         formattedAmount={formattedAmount}

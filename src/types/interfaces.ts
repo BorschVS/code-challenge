@@ -1,3 +1,5 @@
+import { HTMLProps } from 'react';
+
 // base
 export interface Theme {
   palette: {
@@ -72,7 +74,14 @@ export interface Prices {
   [key: string]: number;
 }
 
-export interface Props {
+export interface Props extends HTMLProps<HTMLDivElement> {
   balances: FormattedWalletBalance[];
   prices: Prices;
+}
+
+export interface WalletRowProps {
+  currency: string;
+  amount: number;
+  usdValue: number;
+  formattedAmount: string;
 }
