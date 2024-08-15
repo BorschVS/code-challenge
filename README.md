@@ -10,12 +10,12 @@ original implementation.
 
 ## Table of Contents
 
-[Original Code Review](#original-code-review)
-[Type Definitions](#type-definitions)
-[Priority Calculation](#priority-calculation)
-[Balances Filtering and Sorting](#balances-filtering-and-sorting)
-[Data Formatting and Rendering](#data-formatting-and-rendering)
-[Conclusion](#conclusion)
+* [Original Code Review](#original-code-review)
+* [Type Definitions](#type-definitions)
+* [Priority Calculation](#priority-calculation)
+* [Balances Filtering and Sorting](#balances-filtering-and-sorting)
+* [Data Formatting and Rendering](#data-formatting-and-rendering)
+* [Conclusion](#conclusion)
 
 ## Original Code Review
 
@@ -408,7 +408,7 @@ updated components now offer several notable improvements:
 
 1. **Enhanced Styling and Layout:**
 
-- **WalletPage:** Replaced a plain <div> with MUI’s Box component, facilitating
+* **WalletPage:** Replaced a plain `<div>` with MUI’s Box component, facilitating
   more consistent and flexible styling. This change ensures that the layout is
   better aligned with MUI’s design principles. WalletRow: Utilized MUI’s Paper,
   Box, and Typography components to create a more visually appealing and
@@ -417,7 +417,7 @@ updated components now offer several notable improvements:
 
 2. **Improved Prop Management:**
 
-- **WalletPage:** Removed unnecessary props and refined prop handling, ensuring
+* **WalletPage:** Removed unnecessary props and refined prop handling, ensuring
   that only relevant data is passed and processed. This change clarifies the
   component’s API and improves type safety. WalletRow: Adjusted props to include
   currency, amount, usdValue, and formattedAmount, ensuring comprehensive and
@@ -425,14 +425,14 @@ updated components now offer several notable improvements:
 
 3. **Optimized Data Handling:**
 
-- **WalletPage:** Streamlined the filtering and sorting logic for wallet
+* **WalletPage:** Streamlined the filtering and sorting logic for wallet
   balances, focusing on valid and prioritized data. This simplification reduces
   complexity and enhances performance, making the component more efficient.
   Consistent
 
 4. **Rendering Logic:**
 
-- **WalletPage:** Integrated data formatting within the rendering process,
+* **WalletPage:** Integrated data formatting within the rendering process,
   minimizing redundancy and potential errors. Improved key management using
   balance.currency ensures accurate and efficient rendering.
 
